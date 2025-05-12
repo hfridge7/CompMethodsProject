@@ -50,7 +50,7 @@ temp_plot = ax.contour(lons, lats, temp_850_values,levels=np.arange(-40, 40, 10)
 rh_plot = ax.contourf(lons, lats, rh_850_values,levels=np.arange(70, 101, 10),cmap='Greens',alpha=1.0,transform=ccrs.PlateCarree())
 # Add colorbar for RH
 cbar = plt.colorbar(rh_plot, ax=ax, shrink=0.7, pad=0.05, orientation='horizontal')
-cbar.set_label('500 mb Relative Humidity (%)')
+cbar.set_label('850 mb Relative Humidity (%)')
 
 # Title and save
 plt.title('850 Temperature (°C)/Relative Humidity (%)')
